@@ -5,30 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucy's Literature</title>
 </head>
+
 <body>
-  <h1>Lucy's Literature</h1>
-  <h2>About Lucy</h2>
-  <p>Lucy Grigsby is a passionate writer and literature enthusiast. She has been writing for over a decade, exploring various genres and styles. Her work often delves into the complexities of human emotions and relationships, offering readers a unique perspective on life.</p>
-  <h2>Featured Works</h2>
-  <ul>
-    <li><strong>The Whispering Shadows</strong> - A gripping tale of mystery and suspense that keeps readers on the edge of their seats.</li>
-    <li><strong>Echoes of the Heart</strong> - A heartfelt exploration of love, loss, and the enduring power of human connection.</li>
-    <li><strong>Through the Looking Glass</strong> - A whimsical journey into a fantastical world where reality and imagination intertwine.</li>
-  </ul>
-  <h2>My Favorite Genres</h2>
-  <p>Lucy enjoys writing in a variety of genres, including:</p>
-  <ul>
-    <li>Romance</li>
-    <li>Mystery</li>
-    <li>Fantasy</li>
-    <li>Science Fiction</li>
-  </ul>
-  <h2>Contact Information</h2>
-  <p>If you would like to get in touch with Lucy, please reach out via email at <a href="mailto:lucy.grigsby@example.com">lucy.grigsby@example.com</a>.</p> 
-  </h2>
-  <footer>
+  <a href="#main-content">Skip to main content</a>
+
+  <header role="banner" aria-label="Site Header">
+    <h1>Lucy's Literature</h1>
+  </header>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About Lucy</a></li>
+        <li><a href="#featured-works">Featured Works</a></li>
+        <li><a href="#favorite-genres">My Favorite Genres</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+      </ul>
+    </nav>
+  <main id="main-content" aria-label="Main Content">
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Lucy</h2>
+      <img
+      src="assets/images/lucy-grigsby-author-portrait-800x600.jpg"
+      alt="Portrait of Lucy Grigsby in a train with a mountain landscape in the background"
+      width="800"
+      height="600"
+      srcset="
+        assets/images/lucy-grigsby-author-portrait-400x300.jpg 400w,
+        assets/images/lucy-grigsby-author-portrait-800x600.jpg 800w,
+        assets/images/lucy-grigsby-author-portrait-1200x900.jpg 1200w
+      "
+      sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
+      >
+      <p>Lucy Grigsby is a passionate writer and literature enthusiast. She has been writing for over a decade, exploring various genres and styles. Her work often delves into the complexities of human emotions and relationships, offering readers a unique perspective on life.</p>
+    </section>
+
+    <section id="featured-works" aria-labelledby="featured-works-heading">
+      <h2 id="featured-works-heading">Featured Works</h2>
+
+      <ul>
+        <li><strong>The Whispering Shadows</strong> - A gripping tale of mystery and suspense that keeps readers on the edge of their seats.</li>
+
+        <li><strong>Echoes of the Heart</strong> - A heartfelt exploration of love, loss, and the enduring power of human connection.</li>
+
+        <li><strong>Through the Looking Glass</strong> - A whimsical journey into a fantastical world where reality and imagination intertwine.</li>
+      </ul>
+    </section>
+
+    <section id="favorite-genres" aria-labelledby="genres-heading">
+      <h2 id="genres-heading">My Favorite Genres</h2>
+
+      <p>Lucy enjoys writing in a variety of genres, including:</p>
+
+      <ul>
+        <li>Romance</li>
+        <li>Mystery</li>
+        <li>Fantasy</li>
+        <li>Science Fiction</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Information</h2>
+
+      <p>If you would like to get in touch with Lucy, please reach out via email at <a href="mailto:lucy.grigsby@example.com
+        </a>.</p>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo" aria-label="Site Footer">
     <p>&copy; 2023 Lucy's Literature. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
